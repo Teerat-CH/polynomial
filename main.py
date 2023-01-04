@@ -14,8 +14,9 @@ for i in range(n):
     x = x+1
     list_of_sequence.append(st.number_input('Insert a number', step=1, key=x))
 
+p = st.slider('Enter number count', 1, 10, 1)
 
-coefficients = np.polyfit(lst, list_of_sequence, 3)
+coefficients = np.polyfit(lst, list_of_sequence, p)
 
 poly = np.poly1d(coefficients)
 
