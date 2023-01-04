@@ -14,9 +14,9 @@ for i in range(n):
     x = x+1
     list_of_sequence.append(st.number_input('Insert a number', step=1, key=x))
 
-p = st.slider('Enter number count', 1, 10, 1)
+p = st.slider('Maximum power', 1, 8, 1)
 
-coefficients = np.polyfit(lst, list_of_sequence, p)
+coefficients = np.polyfit(lst, list_of_sequence, 2)
 
 poly = np.poly1d(coefficients)
 
