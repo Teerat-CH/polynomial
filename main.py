@@ -16,7 +16,7 @@ for i in range(n):
 
 p = st.slider('Maximum power', 1, 8, 1)
 
-coefficients = np.polyfit(lst, list_of_sequence, 2)
+coefficients = np.polyfit(lst, list_of_sequence, p)
 
 poly = np.poly1d(coefficients)
 
